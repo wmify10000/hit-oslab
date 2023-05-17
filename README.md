@@ -15,15 +15,26 @@ hit-oslab
 
 ## 安装
 
-本安装脚本会将实验环境安装在用户目录下，文件名为oslab。如果有特殊需要，请自行移动文件夹位置。注意，请不要使用超级用户执行此安装命令，当有需要时hit-oslab会请求超级用户权限。
+本安装脚本会将实验环境安装在用户目录下，目录名为oslab。如果有特殊需要，请自行移动文件夹位置。注意，请不要使用超级用户执行此安装命令，当有需要时hit-oslab会请求超级用户权限。
 
 ```shell
 git clone https://github.com/DeathKing/hit-oslab.git ~/hit-oslab
 cd ~/hit-oslab
 ./setup.sh
 ```
-
 如果想要跳过软件源更新步骤，请在`./setup.sh`后加上参数`-s`或`--skip-update`。
+
+## 编译
+```shell
+cd oslab/linux-0.11
+make
+```
+
+## 启动
+```shell
+./run
+```
+
 
 ## 复原
 
